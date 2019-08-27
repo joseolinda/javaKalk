@@ -5,14 +5,16 @@ public class JavaKalk {
       
       String numA = JOptionPane.showInputDialog(null, "Digite o primeiro número:");
       String numB = JOptionPane.showInputDialog(null, "Digite o segundo número:");
-      //transfomando os Strings em Double
-      double a = Double.parseDouble(numA);
-      double b = Double.parseDouble(numB);
+      //transfomando os Strings em Integer
+      int a = Integer.parseInt(numA);
+      int b = Integer.parseInt(numB);
+	   double x = a;
+	   double y = b;
       //calculando
-      double soma = a + b;
-      double sub = a - b;
-      double mult = a * b;
-      double div = a / b;
+      int soma = (int) (x + y);
+      int sub = a - b;
+      int mult = a * b;
+      double div = x / y;
       //mostrando o resultado das quatro operações básicas
       JOptionPane.showMessageDialog(null,
             "Soma: " + soma + "\n" +
